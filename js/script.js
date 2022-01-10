@@ -1,8 +1,8 @@
 let elPocemonsList = document.querySelector(".pocemons-list");
 //.. el variables  above
 
-
-for(let pocemon of pokemons){
+function makingPocemonCards(array){
+for(let pocemon of array){
     let pocemonCard = document.createElement("li");
     let pocemonImageBox = document.createElement("div");
     let pocemonImg = document.createElement("img");
@@ -59,4 +59,6 @@ for(let pocemon of pokemons){
     pocemonWeight.innerHTML = pocemon.weight;
     pocemonHeight.innerHTML = pocemon.height;
 
-}
+}}
+
+makingPocemonCards(pokemons);
